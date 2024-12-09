@@ -29,6 +29,46 @@ h3,
 h4,
 h5,
 h6 {
+
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.computer-frame {
+    position: relative;
+    width: 600px; /* Adjust to your computer image size */
+    height: 400px;
+}
+
+.frame-image {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.screen {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    overflow: auto;
+    background-color: black;
+    border: 2px solid #ccc;
+}
+
+.scaled-page {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform-origin: top left;
+    transform: scale(2); /* Adjust to fit the screen */
+}
   /* Header font */
   font-family: "Dancing Script", cursive;
 }
