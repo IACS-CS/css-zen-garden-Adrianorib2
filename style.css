@@ -40,9 +40,9 @@ h6 {
 }
 
 .computer-frame {
-    position: relative;
-    width: 600px; /* Adjust to your computer image size */
-    height: 400px;
+    position: absolute;
+    width: 300px; /* Adjust to your computer image size */
+    height: 100px;
 }
 
 .frame-image {
@@ -67,7 +67,8 @@ h6 {
     height: 100%;
     border: none;
     transform-origin: top left;
-    transform: scale(2); /* Adjust to fit the screen */
+    transform: scale(0.5); /* Adjust to fit the screen */
+    z-index: 10;
 }
   /* Header font */
   font-family: "Dancing Script", cursive;
